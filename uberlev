@@ -18,7 +18,7 @@ var utils = require('./lib/utils')
 var args = require('optimist')
 
 var argv = args
-  .usage('lev [path] [options]')
+  .usage('uberlev [path] [options]')
 
   .alias('t', 'tree')
   .describe('tree', 'List sublevels as a tree')
@@ -62,7 +62,7 @@ var db
 var tree
 
 try {
-  var settingsFile = utils.find('.lev');
+  var settingsFile = utils.find('.uberlev');
   var defaults = JSON.parse(fs.readFileSync(settingsFile)) || {}
   argv = deepmerge(argv, defaults)
 }
