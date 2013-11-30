@@ -1,6 +1,6 @@
 var spawn = require('child_process').spawn;
 var path = require('path');
-var levelup = require('level');
+var levelup = require('uberlevel');
 var p = path.join(__dirname, '..', 'fixtures', 'db');
 var lev = path.join(__dirname, '..', '..', 'lev');
 var multilevel = require('multilevel')
