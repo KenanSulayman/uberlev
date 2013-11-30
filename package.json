@@ -1,11 +1,11 @@
 {
-  "name": "lev",
+  "name": "uberlev",
   "version": "1.2.2",
-  "bin": "./lev",
-  "description": "commandline and REPL access for leveldb",
-  "main": "lev",
+  "bin": "./uberlev",
+  "description": "commandline and REPL access for uberlevel",
+  "main": "uberlev",
   "dependencies": {
-    "level": "0.18.0",
+    "uberlevel": "*",
     "optimist": "0.3.4",
     "deepmerge": "~0.2.5",
     "level-delete-range": "0.1.0",
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hij1nx/lev.git"
+    "url": "git://github.com/KenanSulayman/uberlev.git"
   },
   "keywords": [
     "leveldb"
