@@ -10,45 +10,45 @@ Commandline [LevelDB][0] management.
 
 # INSTALLATION
 ```bash
-$npm install lev -g
+$npm install uber -g
 ```
 
 # CLI EXAMPLES
 
 ```bash
-$ lev
+$ uberlev
 ``` 
 
 Get the first 10 keys in the database, the path is optional but if ommited a database will be created in the current working directory.
 
 ```bash
-$ lev path/to/db --keys --limit 10
+$ uberlev path/to/db --keys --limit 10
 ```
 
 or short hand 
 
 ```bash
-$ lev path/to/db -kl 10
+$ uberlev path/to/db -kl 10
 ```
 
 Get the first ten records starting at `bazz` and ending at `zomg`.
 ```bash
-$ lev path/to/db --limit 10 --start 'bazz' --end 'zomg'
+$ uberlev path/to/db --limit 10 --start 'bazz' --end 'zomg'
 ```
 
 Get the key `welcome` from inside the 2 sublevels deep
 ```bash
-lev ./db --cd greetings/en --get 'welcome'
+uberlev ./db --cd greetings/en --get 'welcome'
 ```
 
 For connecting to a [multilevel][1] enabled instance, specify the `port` parameter:
 
-`lev --port 1337 --keys ...`
+`uberlev --port 1337 --keys ...`
 
 ## REPL
 Start the REPL by providing only a path or host and port
 ```bash
-$lev path/to/db
+$uberlev path/to/db
 ```
 
 Commands in the REPL also match the API. But wait! There are a subset of commands 
