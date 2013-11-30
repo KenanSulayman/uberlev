@@ -10,7 +10,7 @@ Commandline [LevelDB][0] management.
 
 # INSTALLATION
 ```bash
-$npm install uber -g
+$npm install uberlev -g
 ```
 
 # CLI EXAMPLES
