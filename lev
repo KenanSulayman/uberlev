@@ -11,7 +11,7 @@ var reconnect = require('reconnect')
 var Sublevel = require('level-sublevel')
 var multilevel = require('multilevel')
 var deleteRange = require('level-delete-range')
-var level = require('level')
+var level = require('uberlevel')
 
 var utils = require('./lib/utils')
 
